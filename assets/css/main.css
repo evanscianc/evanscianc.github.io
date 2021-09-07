@@ -135,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #000; /* #787878 */
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2134,7 +2134,9 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 0%;
+			width: 200;
+			height: 200;
 		}
 
 			.image.avatar:before {
@@ -2142,9 +2144,15 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				border-radius: 50%;
+				width: 0%;
+				/* width: 100; */
 			}
+
+		.image.real {
+			width: 200;
+			height: 200;
+		}
 
 /* List */
 
@@ -2593,7 +2601,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../../images/palmtree.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -3078,7 +3086,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/palmtree.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
